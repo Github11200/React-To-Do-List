@@ -20,7 +20,7 @@ export const TodoWrapper = () => {
                 if (todo.id === id) {
                     return { ...todo, isCompleted: !todo.isCompleted };
                 } else {
-                    return { todo };
+                    return { ...todo };
                 }
             })
         );
