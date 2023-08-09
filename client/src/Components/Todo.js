@@ -12,8 +12,8 @@ export const Todo = ({ task, toggleCompleted, deleteTodo, editTodo }) => {
             <p
                 className={
                     task.isCompleted
-                        ? "text-xl inline justify-self-start line-through"
-                        : "text-xl inline justify-self-start"
+                        ? "text-xl inline justify-self-start line-through hover:cursor-pointer"
+                        : "text-xl inline justify-self-start hover:cursor-pointer"
                 }
                 onClick={() => {
                     toggleCompleted(task.id);
