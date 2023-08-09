@@ -10,8 +10,11 @@ export const Todo = ({ task, toggleCompleted, deleteTodo, editTodo }) => {
             className="grid-rows-1 grid grid-cols-2 bg-purple-400 p-[0.7vw] rounded-xl m-5 pl-[4%]"
         >
             <p
-                // className={task.isCompleted ? "completed" : ""}
-                className="text-xl inline justify-self-start"
+                className={
+                    task.isCompleted
+                        ? "text-xl inline justify-self-start line-through"
+                        : "text-xl inline justify-self-start"
+                }
                 onClick={() => {
                     toggleCompleted(task.id);
                 }}

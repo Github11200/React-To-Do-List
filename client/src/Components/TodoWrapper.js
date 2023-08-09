@@ -57,7 +57,7 @@ export const TodoWrapper = () => {
         <>
             <div className="flex justify-center items-center h-screen w-screen bg-black">
                 <div className="bg-purple-700 flex flex-col justify-center w-auto p-[5vw] rounded-3xl">
-                    <h1 className="text-center text-4xl font-medium">
+                    <h1 className="text-center text-5xl font-bungee">
                         To-do List!
                     </h1>
                     <br />
