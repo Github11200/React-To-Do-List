@@ -10,7 +10,7 @@ export const TodoForm = ({ addTodo }) => {
     };
 
     return (
-        <div>
+        <div className="mt-10">
             <form
                 onSubmit={submitHandler}
                 className="flex justify-center items-start w-[50vw] flex-row"
@@ -22,12 +22,9 @@ export const TodoForm = ({ addTodo }) => {
                     id="addTaskInput"
                     value={value}
                     onChange={(e) => setValue(e.target.value)}
-                    className="p-3 pr-7 rounded-lg flex-grow basis-10/12 focus:ring-purple-400 focus:ring focus:ring-offset-1 focus:outline-none"
+                    className="input w-full mr-3 input-bordered input-accent"
                 />
-                <button
-                    type="submit"
-                    className="w-4 basis-2/12 bg-purple-300 ml-[1vw] rounded-lg hover:bg-purple-400 p-3"
-                >
+                <button type="submit" className="btn btn-outline">
                     Add Task
                 </button>
             </form>
